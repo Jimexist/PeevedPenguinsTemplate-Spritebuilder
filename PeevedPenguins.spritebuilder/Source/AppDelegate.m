@@ -53,7 +53,10 @@
     //[cocos2dSetup setObject:kEAGLColorFormatRGB565 forKey:CCConfigPixelFormat];
     
     [self setupCocos2dWithOptions:cocos2dSetup];
-    
+
+    [CCBReader load:@"Seal"];
+    [CCBReader load:@"Penguin"];
+
     return YES;
 }
 
