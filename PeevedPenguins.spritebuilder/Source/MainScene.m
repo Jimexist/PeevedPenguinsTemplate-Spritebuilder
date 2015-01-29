@@ -10,4 +10,9 @@
 
 @implementation MainScene
 
+-(void)play
+{
+    CCLOG(@"play button clicked");
+}
+
 @end
