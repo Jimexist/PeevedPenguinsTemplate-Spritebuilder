@@ -31,8 +31,6 @@
     // position the penguin at the bowl of the catapult
     penguin.position = ccpAdd(_catapultArm.position, ccp(16, 50));
 
-    CCLOG(@"penguin position %f %f", penguin.position.x, penguin.position.y);
-
     // add the penguin to the physicsNode of this scene (because it has physics enabled)
     [_physicsNode addChild:penguin];
 
