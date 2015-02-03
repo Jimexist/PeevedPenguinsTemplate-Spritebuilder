@@ -15,6 +15,8 @@
     CCNode *_contentNode;
     CCNode *_pullbackNode;
     CCNode *_catapultArm;
+    CCNode *_mouseJointNode;
+    CCPhysicsJoint *_mouseJoint;
 }
 
 // is called when CCB file has completed loading
@@ -24,6 +26,7 @@
 
     _physicsNode.debugDraw = YES;
     _pullbackNode.physicsBody.collisionMask = @[];
+    _mouseJointNode.physicsBody.collisionMask = @[];
 
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
@@ -31,7 +34,38 @@
 
 // called on every touch in this scene
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
-    [self launchPenguin];
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+
+    if (CGRectContainsPoint([_catapultArm boundingBox], touchLocation)) {
+        _mouseJointNode.position = touchLocation;
+        _mouseJoint = [CCPhysicsJoint connectedSpringJointWithBodyA:_mouseJointNode.physicsBody
+                                                              bodyB:_catapultArm.physicsBody
+                                                            anchorA:ccp(0.0, 0.0)
+                                                            anchorB:ccp(34.0, 138.0)
+                                                         restLength:0.0f
+                                                          stiffness:3000.0f
+                                                            damping:150.f];
+    }
+}
+
+- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+    _mouseJointNode.position = touchLocation;
+}
+
+- (void)touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    [self releaseCatapult];
+}
+
+- (void)touchCancelled:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    [self releaseCatapult];
+}
+
+- (void)releaseCatapult {
+    if (_mouseJointNode != nil) {
+        [_mouseJoint invalidate];
+        _mouseJoint = nil;
+    }
 }
 
 - (void)launchPenguin {
