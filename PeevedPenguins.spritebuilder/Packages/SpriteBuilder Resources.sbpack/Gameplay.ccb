@@ -267,8 +267,6 @@
 					<real>100</real>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -648,11 +646,11 @@
 									<key>points</key>
 									<array>
 										<array>
-											<real>-18.964895248413086</real>
-											<real>0.54296243190765381</real>
+											<real>-19.695363998413086</real>
+											<real>0.14452488720417023</real>
 										</array>
 										<array>
-											<real>-18.964895248413086</real>
+											<real>-19.695363998413086</real>
 											<real>177</real>
 										</array>
 										<array>
@@ -676,12 +674,12 @@
 												<real>177</real>
 											</array>
 											<array>
-												<real>-18.964895248413086</real>
+												<real>-19.695363998413086</real>
 												<real>177</real>
 											</array>
 											<array>
-												<real>-18.964895248413086</real>
-												<real>0.54296243190765381</real>
+												<real>-19.695363998413086</real>
+												<real>0.14452488720417023</real>
 											</array>
 										</array>
 									</array>
@@ -778,6 +776,8 @@
 										<array/>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
