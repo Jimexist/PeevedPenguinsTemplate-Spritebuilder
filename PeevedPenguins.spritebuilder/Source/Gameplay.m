@@ -45,7 +45,7 @@
                                                             anchorA:ccp(0.0, 0.0)
                                                             anchorB:ccp(34.0, 138.0)
                                                          restLength:0.0f
-                                                          stiffness:9000.0f
+                                                          stiffness:3000.0f
                                                             damping:150.f];
 
         // create a penguin from the ccb-file
@@ -67,14 +67,17 @@
 
 - (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
     CGPoint touchLocation = [touch locationInNode:_contentNode];
+    CCLOG(@"touch moved");
     _mouseJointNode.position = touchLocation;
 }
 
 - (void)touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    CCLOG(@"touch ended");
     [self releaseCatapult];
 }
 
 - (void)touchCancelled:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
+    CCLOG(@"touch cancelled");
     [self releaseCatapult];
 }
 
