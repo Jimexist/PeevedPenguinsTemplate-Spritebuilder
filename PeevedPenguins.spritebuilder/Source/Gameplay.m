@@ -50,7 +50,7 @@
 }
 
 - (void)retry {
-    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gamescene"]];
+    [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
 
