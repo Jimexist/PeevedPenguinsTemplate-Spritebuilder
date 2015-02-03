@@ -13,6 +13,7 @@
     CCPhysicsNode *_physicsNode;
     CCNode *_levelNode;
     CCNode *_contentNode;
+    CCNode *_pullbackNode;
     CCNode *_catapultArm;
 }
 
@@ -22,6 +23,7 @@
     [_levelNode addChild:level];
 
     _physicsNode.debugDraw = YES;
+    _pullbackNode.physicsBody.collisionMask = @[];
 
     // tell this scene to accept touches
     self.userInteractionEnabled = TRUE;
