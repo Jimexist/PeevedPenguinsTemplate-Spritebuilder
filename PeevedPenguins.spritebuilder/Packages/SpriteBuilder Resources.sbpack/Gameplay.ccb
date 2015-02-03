@@ -213,7 +213,7 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>10</real>
+						<real>15</real>
 						<real>14</real>
 					</array>
 				</dict>
@@ -267,6 +267,8 @@
 					<real>100</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -603,8 +605,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
