@@ -55,7 +55,7 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>238.99996948242188</real>
+						<real>228.99996948242188</real>
 						<real>108.99999237060547</real>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -648,40 +648,40 @@
 									<key>points</key>
 									<array>
 										<array>
-											<real>-19.695363998413086</real>
-											<real>0.14452488720417023</real>
+											<real>0.0</real>
+											<real>0.0</real>
 										</array>
 										<array>
-											<real>-19.695363998413086</real>
+											<real>0.0</real>
 											<real>177</real>
 										</array>
 										<array>
-											<real>28.039016723632812</real>
+											<real>42</real>
 											<real>177</real>
 										</array>
 										<array>
-											<real>28.039016723632812</real>
-											<real>0.14452488720417023</real>
+											<real>42</real>
+											<real>0.0</real>
 										</array>
 									</array>
 									<key>polygons</key>
 									<array>
 										<array>
 											<array>
-												<real>28.039016723632812</real>
-												<real>0.14452488720417023</real>
+												<real>42</real>
+												<real>0.0</real>
 											</array>
 											<array>
-												<real>28.039016723632812</real>
+												<real>42</real>
 												<real>177</real>
 											</array>
 											<array>
-												<real>-19.695363998413086</real>
+												<real>0.0</real>
 												<real>177</real>
 											</array>
 											<array>
-												<real>-19.695363998413086</real>
-												<real>0.14452488720417023</real>
+												<real>0.0</real>
+												<real>0.0</real>
 											</array>
 										</array>
 									</array>
@@ -703,7 +703,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>252</real>
+											<real>242</real>
 											<real>195</real>
 											<integer>0</integer>
 											<integer>0</integer>
@@ -892,7 +892,7 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
-											<real>265</real>
+											<real>255</real>
 											<real>90</real>
 											<integer>0</integer>
 											<integer>0</integer>
