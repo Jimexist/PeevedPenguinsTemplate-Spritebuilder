@@ -29,7 +29,6 @@
     _physicsNode.debugDraw = YES;
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
-
     _physicsNode.collisionDelegate = self;
 
     // tell this scene to accept touches
