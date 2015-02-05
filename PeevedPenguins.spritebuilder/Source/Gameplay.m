@@ -36,7 +36,7 @@ static const float MIN_SPEED = 5.f;
     [_levelNode addChild:level];
 
     // tell this scene to accept touches
-    self.userInteractionEnabled = TRUE;
+    // self.userInteractionEnabled = TRUE;
 }
 
 - (void)update:(CCTime)delta
