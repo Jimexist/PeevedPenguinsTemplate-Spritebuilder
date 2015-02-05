@@ -27,7 +27,7 @@ static const float MIN_SPEED = 5.f;
 
 // is called when CCB file has completed loading
 - (void)didLoadFromCCB {
-    _physicsNode.debugDraw = YES;
+    // _physicsNode.debugDraw = YES;
     _pullbackNode.physicsBody.collisionMask = @[];
     _mouseJointNode.physicsBody.collisionMask = @[];
     _physicsNode.collisionDelegate = self;
@@ -36,7 +36,7 @@ static const float MIN_SPEED = 5.f;
     [_levelNode addChild:level];
 
     // tell this scene to accept touches
-    // self.userInteractionEnabled = TRUE;
+    self.userInteractionEnabled = TRUE;
 }
 
 - (void)update:(CCTime)delta
