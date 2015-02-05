@@ -10,5 +10,8 @@
 
 @implementation Penguin
 
+- (void)didLoadFromCCB {
+    self.physicsBody.collisionType = @"penguin";
+}
 
 @end
